@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:id="@+id/scrollView">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.vetbossel.androidcrud.EditViewData">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/linearLayout">
+
+        <TextView
+            android:id="@+id/title_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TITLE:"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="none"
+            android:id="@+id/Title_edittext"
+            android:backgroundTint="@color/dim_foreground_disabled_material_dark" />
+
+        <TextView
+            android:id="@+id/year_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="YEAR:"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <EditText
+            android:id="@+id/year_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="date" />
+
+        <TextView
+            android:id="@+id/director_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DIRECTOR:"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <EditText
+            android:id="@+id/director_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:maxLength="12" />
+
+        <TextView
+            android:id="@+id/cast_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CAST:"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="12"
+            android:id="@+id/cast_edittext" />
+
+        <TextView
+            android:id="@+id/rating_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="RATING:"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"
+                        android:ems="10"
+                        android:id="@+id/rating_edittext" />
+<!--        <RatingBar-->
+<!--            android:id="@+id/rating_edittext"-->
+<!--            android:layout_width="387dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:numStars="10" />-->
+
+        <TextView
+            android:id="@+id/review_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="REVIEW:"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/review_edittext" />
+
+
+
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Save"
+                android:id="@+id/save_button"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:backgroundTint="@android:color/holo_green_light" />
+
+<!--            <Button-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Delete"-->
+<!--                android:id="@+id/btnDelete"-->
+<!--                android:layout_weight="1"-->
+<!--                android:clickable="true"-->
+<!--                android:backgroundTint="@android:color/holo_red_light" />-->
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
+</ScrollView>
+
+    <!--<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+    <!--    xmlns:tools="http://schemas.android.com/tools"-->
+    <!--    android:layout_width="match_parent"-->
+    <!--    android:layout_height="match_parent"-->
+    <!--    tools:context=".RegisterMovie">-->
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/director_id"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:text="Director"-->
+    <!--        android:textSize="24sp"-->
+    <!--        android:textStyle="bold"-->
+    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--        app:layout_constraintEnd_toStartOf="@+id/director_edittext"-->
+    <!--        app:layout_constraintHorizontal_bias="0.54"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/year_id"-->
+    <!--        app:layout_constraintVertical_bias="0.081" />-->
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/review_id"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:text="Review"-->
+    <!--        android:textSize="24sp"-->
+    <!--        android:textStyle="bold"-->
+    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--        app:layout_constraintEnd_toStartOf="@+id/review_edittext"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/rating_id"-->
+    <!--        app:layout_constraintVertical_bias="0.155" />-->
+
+    <!--    <EditText-->
+    <!--        android:id="@+id/Title_edittext"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:ems="10"-->
+    <!--        android:inputType="textPersonName"-->
+    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintHorizontal_bias="0.731"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/description_title"-->
+    <!--        app:layout_constraintVertical_bias="0.047" />-->
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/description_title"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:text="Register Movie"-->
+    <!--        android:textSize="36sp"-->
+    <!--        android:textStyle="bold"-->
+    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintHorizontal_bias="0.498"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent"-->
+    <!--        app:layout_constraintVertical_bias="0.068" />-->
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/title_name"-->
+    <!--        android:layout_width="89dp"-->
+    <!--        android:layout_height="33dp"-->
+    <!--        android:text="Title "-->
+    <!--        android:textSize="24sp"-->
+    <!--        android:textStyle="bold"-->
+    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--        app:layout_constraintEnd_toStartOf="@+id/Title_edittext"-->
+    <!--        app:layout_constraintHorizontal_bias="0.603"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/description_title"-->
+    <!--        app:layout_constraintVertical_bias="0.086" />-->
+
+    <!--    <EditText-->
+    <!--        android:id="@+id/year_edittext"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:ems="10"-->
+    <!--        android:inputType="number"-->
+    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintHorizontal_bias="0.731"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/Title_edittext"-->
+    <!--        app:layout_constraintVertical_bias="0.046" />-->
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/year_id"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:text="Year"-->
+    <!--        android:textSize="24sp"-->
+    <!--        android:textStyle="bold"-->
+    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--        app:layout_constraintEnd_toStartOf="@+id/year_edittext"-->
+    <!--        app:layout_constraintHorizontal_bias="0.357"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/title_name"-->
+    <!--        app:layout_constraintVertical_bias="0.065" />-->
+
+    <!--    <EditText-->
+    <!--        android:id="@+id/director_edittext"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:ems="10"-->
+    <!--        android:inputType="textPersonName"-->
+    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintHorizontal_bias="0.731"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/year_edittext"-->
+    <!--        app:layout_constraintVertical_bias="0.056" />-->
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/rating_id"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginBottom="276dp"-->
+    <!--        android:text="Rating"-->
+    <!--        android:textSize="24sp"-->
+    <!--        android:textStyle="bold"-->
+    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--        app:layout_constraintEnd_toStartOf="@+id/director_edittext"-->
+    <!--        app:layout_constraintHorizontal_bias="0.454"-->
+    <!--        app:layout_constraintStart_toStartOf="parent" />-->
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/cast_id"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginBottom="344dp"-->
+    <!--        android:text="Cast"-->
+    <!--        android:textSize="24sp"-->
+    <!--        android:textStyle="bold"-->
+    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--        app:layout_constraintEnd_toStartOf="@+id/cast_edittext"-->
+    <!--        app:layout_constraintHorizontal_bias="0.336"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/director_id"-->
+    <!--        app:layout_constraintVertical_bias="0.85" />-->
+
+    <!--    <EditText-->
+    <!--        android:id="@+id/cast_edittext"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginTop="20dp"-->
+    <!--        android:layout_marginEnd="52dp"-->
+    <!--        android:layout_marginRight="52dp"-->
+    <!--        android:ems="10"-->
+    <!--        android:inputType="textPersonName"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/director_edittext" />-->
+
+    <!--    <EditText-->
+    <!--        android:id="@+id/rating_edittext"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:ems="10"-->
+    <!--        android:inputType="number"-->
+    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintHorizontal_bias="0.731"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/cast_edittext"-->
+    <!--        app:layout_constraintVertical_bias="0.093" />-->
+
+    <!--    <EditText-->
+    <!--        android:id="@+id/review_edittext"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:ems="10"-->
+    <!--        android:inputType="textPersonName"-->
+    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintHorizontal_bias="0.731"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/rating_edittext"-->
+    <!--        app:layout_constraintVertical_bias="0.127" />-->
+
+    <!--    <Button-->
+    <!--        android:id="@+id/save_button"-->
+    <!--        android:layout_width="364dp"-->
+    <!--        android:layout_height="46dp"-->
+    <!--        android:text="Save"-->
+    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent"-->
+    <!--        app:layout_constraintVertical_bias="0.848" />-->
+
+    <!--</androidx.constraintlayout.widget.ConstraintLayout>-->

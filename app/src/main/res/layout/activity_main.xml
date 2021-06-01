@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#6f7ca8">
+
+    <ImageButton
+        android:id="@+id/reg_btn"
+        android:layout_width="170dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:src="@drawable/register"
+        android:text="@string/Register"
+        app:layout_constraintBottom_toTopOf="@+id/edit_btn"
+        app:layout_constraintEnd_toStartOf="@+id/search_btn"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <ImageButton
+        android:id="@+id/display_btn"
+        android:layout_width="170dp"
+        android:layout_height="100dp"
+        android:contentDescription="@string/todo"
+        android:src="@drawable/display"
+        android:text="@string/DisplayMovies"
+        app:layout_constraintBottom_toTopOf="@+id/ratings_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.727"
+        app:layout_constraintStart_toEndOf="@+id/reg_btn"
+        app:layout_constraintTop_toTopOf="@+id/reg_btn"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageButton
+        android:id="@+id/fev_btn"
+        android:layout_width="170dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginBottom="84dp"
+        android:src="@drawable/fav"
+        android:text="@string/Favourites"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageButton
+        android:id="@+id/edit_btn"
+        android:layout_width="170dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginBottom="8dp"
+        android:src="@drawable/edit"
+        android:text="@string/Edit_movie"
+        app:layout_constraintBottom_toTopOf="@+id/fev_btn"
+        app:layout_constraintEnd_toStartOf="@+id/ratings_btn"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/ratings_btn"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageButton
+        android:id="@+id/search_btn"
+        android:layout_width="170dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="84dp"
+        android:src="@drawable/search"
+        android:text="@string/Search"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.727"
+        app:layout_constraintStart_toEndOf="@+id/fev_btn" />
+
+    <ImageButton
+        android:id="@+id/ratings_btn"
+        android:layout_width="170dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginBottom="28dp"
+        android:contentDescription="@string/todo1"
+        android:src="@drawable/ratings"
+        android:text="@string/Rating"
+        app:layout_constraintBottom_toTopOf="@+id/search_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.615"
+        app:layout_constraintStart_toEndOf="@+id/reg_btn" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="382dp"
+        android:layout_height="216dp"
+        android:src="@drawable/wallfilm"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.448"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.067" />
+</androidx.constraintlayout.widget.ConstraintLayout>

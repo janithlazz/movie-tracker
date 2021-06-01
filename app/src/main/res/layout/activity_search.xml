@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/scrollView">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        tools:context="com.vetbossel.androidcrud.SearchData">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/linearLayout">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/editSearch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="Search Film title Name" />
+
+                <Button
+                    android:id="@+id/btn_lookup"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Lookup" />
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Title"
+                android:id="@+id/textTitle" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:id="@+id/resTitle"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Year:"
+                android:id="@+id/textYear" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:id="@+id/resYear"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Director:"
+                android:id="@+id/textDirector" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:id="@+id/resDirector"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Cast:"
+                android:id="@+id/textCast" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:id="@+id/resCast"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Rating:"
+                android:id="@+id/textRating" />
+
+            <TextView
+                android:id="@+id/resRating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal|time"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Review:"
+                android:id="@+id/textReview" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:id="@+id/resReview"
+                android:textStyle="bold" />
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:textAppearance="?android:attr/textAppearanceLarge"-->
+<!--                android:text="Phone:"-->
+<!--                android:id="@+id/textPhone" />-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:textAppearance="?android:attr/textAppearanceLarge"-->
+<!--                android:id="@+id/resPhone"-->
+<!--                android:textStyle="bold" />-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:textAppearance="?android:attr/textAppearanceLarge"-->
+<!--                android:text="Email:"-->
+<!--                android:id="@+id/textEmail" />-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:textAppearance="?android:attr/textAppearanceLarge"-->
+<!--                android:id="@+id/resEmail"-->
+<!--                android:textStyle="bold" />-->
+
+<!--            <LinearLayout-->
+<!--                android:orientation="horizontal"-->
+<!--                android:layout_width="fill_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="30dp">-->
+
+<!--                <ImageButton-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:id="@+id/btnCall"-->
+<!--                    android:src="@android:drawable/ic_menu_call"-->
+<!--                    android:clickable="true"-->
+<!--                    android:backgroundTint="@android:color/holo_blue_bright"-->
+<!--                    android:layout_weight="1" />-->
+
+<!--                <ImageButton-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:id="@+id/btnMsg"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:src="@android:drawable/sym_action_chat"-->
+<!--                    android:clickable="true"-->
+<!--                    android:backgroundTint="@android:color/holo_green_light" />-->
+
+<!--                <ImageButton-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:id="@+id/btnEmail"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:src="@android:drawable/ic_dialog_email"-->
+<!--                    android:clickable="true"-->
+<!--                    android:backgroundTint="@android:color/holo_purple" />-->
+
+<!--                <ImageButton-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:id="@+id/btnMap"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:clickable="true"-->
+<!--                    android:src="@android:drawable/ic_dialog_map"-->
+<!--                    android:backgroundTint="@android:color/holo_red_light" />-->
+
+<!--                <ImageButton-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:id="@+id/btnEdit"-->
+<!--                    android:src="@android:drawable/ic_menu_edit"-->
+<!--                    android:clickable="true"-->
+<!--                    android:backgroundTint="@android:color/holo_orange_light"-->
+<!--                    android:layout_weight="1" />-->
+<!--            </LinearLayout>-->
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</ScrollView>
